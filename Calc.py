@@ -18,13 +18,14 @@ while(1):
     num2 = int(input("Enter Num 2 - "))
 
     if choice == 1:
-        add.add(num1, num2)
+        res = add.add(num1, num2)
     elif choice == 2:
-        Subtraction.Subtract(num1, num2)
+        res = Subtraction.Subtract(num1, num2)
     elif choice == 3:
-        multiplication.multiply(num1, num2)
+        res = multiplication.multiply(num1, num2)
     elif choice == 4:
-        Division.division(num1, num2)
+        res = Division.division(num1, num2)
     elif choice == 5:
         break
 
+    print("Result - ", res)
